@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+  --dark-cyan:hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Kumbh Sans,'sans-serif';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark-cyan);
+  color: var(--very-dark-blue);
+}
+p {
+  margin: 0;
+}
+.card {
+  width: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 0 var(--very-dark-blue);
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/*images*/
+.pattern{
+  width: 100%;
+}
+.avatar {
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 5px solid white;
+}
+/*User Info*/
+.info {
+  padding: 20px;
+}
+.name{
+  font-weight: bolder;
+  font-size: 18px;
+}
+.age {
+  margin-left: .5rem;
+}
+.country{
+  font-size: 14px;
+  margin-top: .5rem;
+}
+/*Social Info*/
+.social {
+  border-top: 1px solid var(--dark-gray);
+  width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+.social > div {
+  width: 70px;
+}
+.social > div p:first-child{
+  font-weight: 700;
+}
+.social > div p:last-child{
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: .3rem;
+}
